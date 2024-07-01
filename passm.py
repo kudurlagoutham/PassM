@@ -1,22 +1,22 @@
-"""It is a Password managing app, and it doesn't generate any new password.
-Mixes two inputs such a way that it looks random and
-it is easy to remember one Master Password rather than remembering all passwords. """
+#It is a Password managing app, and it doesn't generate any new password.
+#Mixes two inputs such a way that it looks random and
+#it is easy to remember one Master Password rather than remembering all passwords.
 
-"""In my sense it easy to remember one password and you would enter the app name or any input or any secondary password if you want to."""
-"""You can tinker with validator to increase the password length."""
+#In my sense it easy to remember one password and you would enter the app name or any input or any secondary password if you want to.
+#You can tinker with validator to increase the password length."""
 import string
 all_combi = [string.punctuation, string.ascii_uppercase, string.digits, string.ascii_lowercase]
 chars=[]
-# getting all possible chars
+# getting all possible characters in a list
 for i in range(len(all_combi)):
     for k in range(len(all_combi[i])):
         chars.append(all_combi[i][k])
-#take sample inputs
+#take sample inputs this is for testing purpose
 #in1="idkfdsas"#input("enter the master Password")
 #in2="domomers"#input("enter the app name")
 
 def password_generator(in1,in2):
-#validate inputs
+#validate inputs characters length 
     def ivalid(a):
         if(5<len(a)<13):
             return True
@@ -47,7 +47,7 @@ def password_generator(in1,in2):
             number1= number1+str(sum1)
         else:
             number1=number1+str(num1[i])
-
+            
     for i in range(len(in2)):
         num2.append(ord(in2[i]))
         sum2=num2[i]+sum2
@@ -66,7 +66,7 @@ def password_generator(in1,in2):
     pl=len(Pass)
 #print(Pass) ok
     
-#lets convert the string to Real Password
+#lets convert the numerical string to Real Password
     for i in range(0,len(Pass),3):
         a=int(Pass[i:i+3])
     
