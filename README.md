@@ -1,3 +1,7 @@
+password manger with cli interface can be found in the RPG_exe folder.
+And GUI version can be found in RPG_gui folder which is user freindly app for windows users.
+These are developed using python.
+
 -> This is a password managing app.
 -> And it features two fields, which are to be entered by the user.
 -> The first field is known as master password, where the user enters his/her master password or main password which can't be forgetable.
